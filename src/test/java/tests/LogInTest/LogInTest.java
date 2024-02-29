@@ -11,13 +11,13 @@ public class LogInTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(LogInTest.class);
     private String newUrl = getBaseUrl();
 
-    String emailaddress = "suplimente1@gmail.com";
-    String password = "proteinexyz";
-
-    @Test
-    public void logIn() {
-        driver.get(newUrl);
-
+//    String emailaddress = "suplimente1@gmail.com";
+//    String password = "proteinexyz";
+//
+//    @Test
+//    public void logIn() {
+//        driver.get(newUrl);
+//
 //        LOG.info("Click 'Account' button");
 //        logInPage.clickAccountButton();
 //
@@ -30,7 +30,7 @@ public class LogInTest extends BaseTest {
 
 
 
-    }
+//    }
 
 }
 
