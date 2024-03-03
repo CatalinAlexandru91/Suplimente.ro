@@ -18,6 +18,7 @@ public class RegisterPage extends BasePage {
         }
         return instance;
     }
+}
 
 //    private By logo = By.id("logo");
 //    private By searchBar = By.id("search");
@@ -121,4 +122,4 @@ public class RegisterPage extends BasePage {
 //        LOG.info("Click 'LogOut' button");
 //        driver.findElement(logOut).click();
 //    }
-}
+//}

@@ -18,6 +18,7 @@ public class LogInPage extends BasePage {
         }
         return instance;
     }
+}
 
 //    private By accountButton = By.xpath("//span[@class='top-menu-link' and text()='CONT']");
 //    private By inputEmailAddress = By.id("input-email");
@@ -46,4 +47,4 @@ public class LogInPage extends BasePage {
 //        LOG.info("Click 'Authentification' button");
 //        driver.findElement(clickLogInButton).click();
 //    }
-}
+//}

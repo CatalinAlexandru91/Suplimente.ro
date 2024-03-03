@@ -11,16 +11,16 @@ import static pages.BasePage.sleep;
 public class RegisterTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(RegisterTest.class);
     private Object sleep;
-
-    String firstName = "Ion";
-    String lastName = "Popescu";
-    String emailaddress = "proteina4@gmail.com";
-    String phonenumber = "0733333333";
-    String password = "proteinexyz";
-
-
-    @Test
-    public void registerAccount() {
+//
+//    String firstName = "Ion";
+//    String lastName = "Popescu";
+//    String emailaddress = "proteina4@gmail.com";
+//    String phonenumber = "0733333333";
+//    String password = "proteinexyz";
+//
+//
+//    @Test
+//    public void registerAccount() {
 
 //        LOG.info("Verify if logo is displayed");
 //        Assert.assertTrue(registerPage.isLogoDisplayed(), "Logo is not displayed");
@@ -71,4 +71,4 @@ public class RegisterTest extends BaseTest {
 
 
     }
-}
+

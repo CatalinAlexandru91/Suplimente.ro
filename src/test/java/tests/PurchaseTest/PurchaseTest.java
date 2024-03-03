@@ -66,19 +66,7 @@ public class PurchaseTest extends BaseTest {
         purchasePage.selectCounty(county);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
 }
+
+        }
 
