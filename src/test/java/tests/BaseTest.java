@@ -6,12 +6,14 @@ import pages.BasePage;
 import pages.LogInPage.LogInPage;
 import pages.PurchasePage.PurchasePage;
 import pages.RegisterPage.RegisterPage;
+import pages.SearchItemPage.SearchItemPage;
 
 public class BaseTest {
 
     public RegisterPage registerPage = RegisterPage.getInstance();
     public LogInPage logInPage = LogInPage.getInstance();
     public PurchasePage purchasePage = PurchasePage.getInstance();
+    public SearchItemPage searchItemPage = SearchItemPage.getInstance();
 
     @BeforeSuite
     public void init() {

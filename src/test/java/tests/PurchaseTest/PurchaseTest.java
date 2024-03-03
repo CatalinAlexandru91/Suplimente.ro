@@ -16,6 +16,13 @@ public class PurchaseTest extends BaseTest {
     private String newUrl = getBaseUrl();
     private Object sleep;
 
+    String firstName = "Ion";
+    String lastname = "Popescu";
+    String email = "ionpopescu@gmail.com";
+    String phonenumber = "0722222222";
+    String address = "Calea Mosilor Nr. 272";
+    String county = "Bucuresti";
+
     @Test
     public void purchase() {
         driver.get(newUrl);
@@ -33,6 +40,42 @@ public class PurchaseTest extends BaseTest {
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
         LOG.info("Click 'Cart' icon");
         purchasePage.clickCartIcon();
+
+        LOG.info("Click 'Finish order' button");
+        purchasePage.clickFinishOrderButton();
+
+        LOG.info("Click 'Order without account' option");
+        purchasePage.clickOrderWithoutAccountOption();
+
+        LOG.info("Insert first name in field");
+        purchasePage.inputFirstName(firstName);
+
+        LOG.info("Insert last name in field");
+        purchasePage.inputLastName(lastname);
+
+        LOG.info("Insert email in field");
+        purchasePage.inputEmail(email);
+
+        LOG.info("Insert phone number in field");
+        purchasePage.inputPhoneNumber(phonenumber);
+
+        LOG.info("Insert address in field");
+        purchasePage.inputAddress(address);
+
+        LOG.info("Select county");
+        purchasePage.selectCounty(county);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
