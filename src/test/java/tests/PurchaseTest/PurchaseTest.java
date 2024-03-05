@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 import pages.BasePage;
 import tests.BaseTest;
+
 import static pages.BasePage.sleep;
 
 import static pages.BasePage.driver;
@@ -22,6 +23,7 @@ public class PurchaseTest extends BaseTest {
     String phonenumber = "0722222222";
     String address = "Calea Mosilor Nr. 272";
     String county = "Bucuresti";
+    String city = "Sectorul 2";
 
     @Test
     public void purchase() {
@@ -36,8 +38,6 @@ public class PurchaseTest extends BaseTest {
         LOG.info("Click third 'Buy' button");
         purchasePage.clickBuyButton3();
 
-        sleep(3000L);
-        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
         LOG.info("Click 'Cart' icon");
         purchasePage.clickCartIcon();
 
@@ -65,8 +65,10 @@ public class PurchaseTest extends BaseTest {
         LOG.info("Select county");
         purchasePage.selectCounty(county);
 
+        LOG.info("Select city");
+        purchasePage.selectCity(city);
+
+    }
 
 }
-
-        }
 

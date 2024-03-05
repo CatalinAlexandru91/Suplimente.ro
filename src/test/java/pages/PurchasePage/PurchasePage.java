@@ -1,8 +1,7 @@
 package pages.PurchasePage;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.JavascriptExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.BasePage;
@@ -33,7 +32,9 @@ public class PurchasePage extends BasePage {
     private By inputEmail = By.id("input-payment-email");
     private By inputPhoneNumber = By.id("input-payment-telephone");
     private By inputAddress = By.xpath("//input[@name=\"payment_address_1\"]");
-    private By selectCounty = By.xpath("//select[@name=\"payment_zone_id\"]");
+    private By selectCounty = By.xpath("//select[@id=\"input-payment-zone\"]/option[@value=\"2688\"]");
+    private By selectCity = By.xpath("//select[@id=\"input-payment-city\"]/option[@value=\"Sectorul 2\"]");
+
 
 
     public void clickBuyButton() {
@@ -55,8 +56,10 @@ public class PurchasePage extends BasePage {
 
     }
 
-
     public void clickCartIcon() {
+
+        sleep(3000L);
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
         LOG.info("Click 'Cart' icon");
         driver.findElement(clickCartIcon).click();
         driver.findElement(clickSeeCartButton).click();
@@ -102,9 +105,16 @@ public class PurchasePage extends BasePage {
 
     public void selectCounty(String county) {
         LOG.info("Select county");
-        Select newCounty = new Select(driver.findElement(selectCounty));
-        newCounty.selectByValue(county);
+        driver.findElement(selectCounty).click();
+
+
+    }
+
+    public void selectCity(String city) {
+        LOG.info("Select city");
+        driver.findElement(selectCity).click();
 
 
     }
 }
+
