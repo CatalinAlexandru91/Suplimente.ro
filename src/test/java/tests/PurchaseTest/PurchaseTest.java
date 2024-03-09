@@ -1,13 +1,9 @@
 package tests.PurchaseTest;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
-import pages.BasePage;
 import tests.BaseTest;
-
-import static pages.BasePage.sleep;
 
 import static pages.BasePage.driver;
 import static pages.BasePage.getBaseUrl;
@@ -16,6 +12,7 @@ public class PurchaseTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(PurchaseTest.class);
     private String newUrl = getBaseUrl();
     private Object sleep;
+
 
     String firstName = "Ion";
     String lastname = "Popescu";
@@ -67,6 +64,18 @@ public class PurchaseTest extends BaseTest {
 
         LOG.info("Select city");
         purchasePage.selectCity(city);
+
+        LOG.info("Click 'Shipping address' box");
+        purchasePage.shippingAddressBox();
+
+        LOG.info("Click 'Newsletter' box");
+        purchasePage.newsletterBox();
+
+        LOG.info("Click 'Privacy' box");
+        purchasePage.privacyBox();
+
+        LOG.info("Click 'Terms and conditions' box");
+        purchasePage.termsAndConditionsBox();
 
     }
 

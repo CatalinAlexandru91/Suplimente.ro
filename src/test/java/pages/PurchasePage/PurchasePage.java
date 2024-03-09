@@ -34,8 +34,10 @@ public class PurchasePage extends BasePage {
     private By inputAddress = By.xpath("//input[@name=\"payment_address_1\"]");
     private By selectCounty = By.xpath("//select[@id=\"input-payment-zone\"]/option[@value=\"2688\"]");
     private By selectCity = By.xpath("//select[@id=\"input-payment-city\"]/option[@value=\"Sectorul 2\"]");
-
-
+    private By shippingAddressBox = By.xpath("//input[@name='shipping_address']");
+    private By newsletterBox = By.id("newsletter");
+    private By privacyBox = By.xpath("//input[@name=\"privacy\"]");
+    private By termsAndConditionsBox = By.xpath("//input[@name=\"agree\"]");
 
     public void clickBuyButton() {
         LOG.info("CLick 'Buy' button");
@@ -116,5 +118,29 @@ public class PurchasePage extends BasePage {
 
 
     }
-}
 
+    public void shippingAddressBox() {
+        LOG.info("Click 'Shipping address' box");
+        driver.findElement(shippingAddressBox).click();
+
+
+    }
+
+    public void newsletterBox() {
+        LOG.info("Click 'Newsletter' box");
+        driver.findElement(newsletterBox).click();
+
+
+    }
+
+    public void privacyBox() {
+        LOG.info("Click 'Privacy' box");
+        driver.findElement(privacyBox).click();
+
+    }
+
+    public void termsAndConditionsBox() {
+        LOG.info("Click 'Terms and conditions' box");
+        driver.findElement(termsAndConditionsBox).click();
+    }
+}
