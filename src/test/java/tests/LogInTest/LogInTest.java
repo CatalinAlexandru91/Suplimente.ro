@@ -13,8 +13,8 @@ public class LogInTest extends BaseTest {
     }
 }
 
-//    String emailaddress = "suplimente1@gmail.com";
-//    String password = "proteinexyz";
+//    String emailaddress = "alex.tarachiu91@gmail.com";
+//    String password = "Suplimente123";
 //
 //    @Test
 //    public void logIn() {
@@ -31,7 +31,7 @@ public class LogInTest extends BaseTest {
 //        logInPage.insertPassword(password);
 //
 //        LOG.info("Click 'Authentification' button");
-//        logInPage.clickAccountButton();
+//        logInPage.clickLogInButton();
 
 
 
