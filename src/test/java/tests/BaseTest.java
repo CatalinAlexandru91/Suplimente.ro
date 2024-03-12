@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeSuite;
 import pages.BasePage;
 import pages.BottomMenuPage.BottomMenuPage;
 import pages.CustomerServicePage.CustomerServicePage;
+import pages.DiscountPage.DiscountPage;
 import pages.MainMenuPage.MainMenuPage;
 import pages.FavouritesPage.FavouritesPage;
 import pages.LogInPage.LogInPage;
@@ -26,7 +27,7 @@ public class BaseTest {
     public MainMenuPage mainMenuPage = MainMenuPage.getInstance();
     public BottomMenuPage bottomMenuPage = BottomMenuPage.getInstance();
     public CustomerServicePage customerServicePage = CustomerServicePage.getInstance();
-
+    public DiscountPage discountPage = DiscountPage.getInstance();
     @BeforeSuite
     public void init() {
         BasePage.setUp();
