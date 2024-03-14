@@ -41,6 +41,18 @@ public class PurchaseTest extends BaseTest {
         LOG.info("Click 'Finish order' button");
         purchasePage.clickFinishOrderButton();
 
+        LOG.info("Select 'Sameday standard' option");
+        purchasePage.clicksamedayStandardBox();
+
+        LOG.info("Select 'Sameday Locker option");
+        purchasePage.clicksamedayLockerBox();
+
+        LOG.info("Select 'Payment upon delivery' option");
+        purchasePage.clickPaymentUponDeliveryBox();
+
+        LOG.info("Select 'Payment upon delivery' option");
+        purchasePage.clickPaymentByCard();
+
         LOG.info("Click 'Order without account' option");
         purchasePage.clickOrderWithoutAccountOption();
 

@@ -44,7 +44,7 @@ public class FavouritesPage extends BasePage {
 
     public void insertPassword(String password) {
         LOG.info("Insert password");
-        driver.findElement(inputPassword).sendKeys("password");
+        driver.findElement(inputPassword).sendKeys(password);
     }
 
     public void clickLogInButton() {

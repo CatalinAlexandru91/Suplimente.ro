@@ -26,6 +26,10 @@ public class PurchasePage extends BasePage {
     private By clickCartIcon = By.id("cart");
     private By clickSeeCartButton = By.xpath("//a[@class=\"button\" and text()='Vezi Coșul']");
     private By finishOrderButton = By.xpath("//a[@class=\"btn btn-primary button\"]");
+    private By samedayStandardBox = By.xpath("//input[@value=\"flat.flat\"]");
+    private By samedayLockerBox = By.xpath("//input[@value=\"sameday.sameday\"]");
+    private By paymentUponDelivery = By.xpath("//input[@value=\"cod\"]");
+    private By paymentByCard = By.xpath("//input[@value=\"euplatesc\"]");
     private By clickOrderWithoutAccountOption = By.xpath("//input[@type=\"radio\"]");
     private By inputFirstName = By.id("input-payment-firstname");
     private By inputLastName = By.id("input-payment-lastname");
@@ -71,6 +75,32 @@ public class PurchasePage extends BasePage {
     public void clickFinishOrderButton() {
         LOG.info("Click 'Finish order' button");
         driver.findElement(finishOrderButton).click();
+    }
+
+    public void clicksamedayStandardBox() {
+        sleep(3000L);
+        LOG.info("Select 'Sameday standard' option");
+        driver.findElement(samedayStandardBox).click();
+
+    }
+
+    public void clicksamedayLockerBox() {
+        sleep(3000L);
+        LOG.info("Select 'Sameday Locker option");
+        driver.findElement(samedayLockerBox).click();
+
+    }
+
+    public void clickPaymentUponDeliveryBox() {
+        LOG.info("Select 'Payment upon delivery' option");
+        driver.findElement(paymentUponDelivery).click();
+
+    }
+
+    public void clickPaymentByCard() {
+        LOG.info("Select 'Payment by card' option");
+        driver.findElement(paymentByCard).click();
+
     }
 
     public void clickOrderWithoutAccountOption() {

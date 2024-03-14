@@ -14,7 +14,7 @@ public class FavouritesTest extends BaseTest {
     private Object sleep;
 
     String emailaddress = "alex.tarachiu91@gmail.com";
-    String password = "Suplimente123";
+    String password = "Suplimente1234";
     String item = "Animal Pak";
 
     @Test

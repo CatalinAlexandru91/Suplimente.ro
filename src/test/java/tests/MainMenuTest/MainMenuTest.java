@@ -29,7 +29,7 @@ public class MainMenuTest extends BaseTest {
         mainMenuPage.clickSelectType();
 
         LOG.info("Click 'Form of presentation' button");
-        mainMenuPage.clickPromotionsButton();
+        mainMenuPage.clickFormOfPresentation();
 
         LOG.info("Click 'Buy' button");
         mainMenuPage.clickBuyButton();
@@ -88,14 +88,23 @@ public class MainMenuTest extends BaseTest {
         LOG.info("Click 'Sports nutrition' option");
         mainMenuPage.clickSportsNutritionOption();
 
+        LOG.info("Click 'Creatine' option");
+        mainMenuPage.clickCreatineOption();
+
         LOG.info("Click 'Select producer' button");
         mainMenuPage.clickProducerButton5();
+
+        LOG.info("Click 'Buy' button");
+        mainMenuPage.clickBuyButton6();
 
         LOG.info("Click 'Buy' button");
         mainMenuPage.clickBuyButton5();
 
         LOG.info("Click 'Sports nutrition' option");
         mainMenuPage.clickSportsNutritionOption2();
+
+        LOG.info("Click 'Protein' option");
+        mainMenuPage.clickProteinOption();
 
         LOG.info("Click 'Select producer' button");
         mainMenuPage.clickProducerButton6();
@@ -106,6 +115,12 @@ public class MainMenuTest extends BaseTest {
         LOG.info("Click 'Buy' button");
         mainMenuPage.clickBuyButton7();
 
+        LOG.info("Select protein flavour");
+        mainMenuPage.selectFlavour2();
+
+        LOG.info("Click 'buy' button");
+        mainMenuPage.clickBuyButton8();
+
         LOG.info("Click 'Producers' button");
         mainMenuPage.clickProducersButton();
 
@@ -114,6 +129,9 @@ public class MainMenuTest extends BaseTest {
 
         LOG.info("Click 'Producers' button");
         mainMenuPage.clickProducersButton2();
+
+        LOG.info("Close popup");
+        mainMenuPage.clickClosePopUp();
 
         LOG.info("Click 'Optimum Nutrition' button");
         mainMenuPage.clickOptimumNutrition();

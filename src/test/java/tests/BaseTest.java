@@ -9,7 +9,7 @@ import pages.DiscountPage.DiscountPage;
 import pages.MainMenuPage.MainMenuPage;
 import pages.FavouritesPage.FavouritesPage;
 import pages.LogInPage.LogInPage;
-import pages.PaymentMethodPage.PaymentMethodPage;
+//import pages.PaymentMethodPage.PaymentMethodPage;
 import pages.MainMenuPage.MainMenuPage;
 import pages.PurchasePage.PurchasePage;
 import pages.RegisterPage.RegisterPage;
@@ -22,7 +22,7 @@ public class BaseTest {
     public LogInPage logInPage = LogInPage.getInstance();
     public PurchasePage purchasePage = PurchasePage.getInstance();
     public SearchItemPage searchItemPage = SearchItemPage.getInstance();
-    public PaymentMethodPage paymentMethodPage = PaymentMethodPage.getInstance();
+    //public PaymentMethodPage paymentMethodPage = PaymentMethodPage.getInstance();
     public FavouritesPage favouritesPage = FavouritesPage.getInstance();
     public MainMenuPage mainMenuPage = MainMenuPage.getInstance();
     public BottomMenuPage bottomMenuPage = BottomMenuPage.getInstance();
