@@ -85,6 +85,7 @@ public class MainMenuTest extends BaseTest {
         LOG.info("Click 'Buy' button");
         mainMenuPage.clickBuyButton5();
 
+
         LOG.info("Click 'Sports nutrition' option");
         mainMenuPage.clickSportsNutritionOption();
 
@@ -96,10 +97,6 @@ public class MainMenuTest extends BaseTest {
 
         LOG.info("Click 'Buy' button");
         mainMenuPage.clickBuyButton6();
-
-        LOG.info("Click 'Buy' button");
-        mainMenuPage.clickBuyButton5();
-
         LOG.info("Click 'Sports nutrition' option");
         mainMenuPage.clickSportsNutritionOption2();
 
@@ -130,8 +127,8 @@ public class MainMenuTest extends BaseTest {
         LOG.info("Click 'Producers' button");
         mainMenuPage.clickProducersButton2();
 
-        LOG.info("Close popup");
-        mainMenuPage.clickClosePopUp();
+//        LOG.info("Close popup");
+//        mainMenuPage.clickClosePopUp();
 
         LOG.info("Click 'Optimum Nutrition' button");
         mainMenuPage.clickOptimumNutrition();

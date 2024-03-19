@@ -78,7 +78,6 @@ public class MainMenuPage extends BasePage {
         LOG.info("Click 'Form of presentation' button");
         driver.findElement(formOfPresentation).click();
 
-
     }
 
     public void clickBuyButton() {
@@ -117,9 +116,7 @@ public class MainMenuPage extends BasePage {
         LOG.info("Click 'Buy' button");
         driver.findElement(buyButton2).click();
 
-
     }
-
 
     public void clickCategoriesOption2() {
         LOG.info("CLick 'Categories' option");
@@ -127,14 +124,12 @@ public class MainMenuPage extends BasePage {
 
     }
 
-
     public void clickMineralsOption() {
         sleep(3000L);
         LOG.info("Click 'Minerals' option");
         driver.findElement(clickMineralsOption).click();
 
     }
-
 
     public void clickMultiMineralsOption() {
         LOG.info("Click 'Multiminerals' option");
@@ -148,12 +143,10 @@ public class MainMenuPage extends BasePage {
 
     }
 
-
     public void clickBuyButton3() {
         sleep(2000L);
         LOG.info("Click 'Buy' button");
         driver.findElement(buyButton3).click();
-
 
     }
 
@@ -161,7 +154,6 @@ public class MainMenuPage extends BasePage {
         sleep(3000L);
         LOG.info("Click 'General health' button");
         driver.findElement(generalHealthButton).click();
-
 
     }
 
@@ -183,14 +175,12 @@ public class MainMenuPage extends BasePage {
         LOG.info("Click 'Buy' button");
         driver.findElement(buyButton4).click();
 
-
     }
 
     public void clickAntioxidantsOption() {
         sleep(2000L);
         LOG.info("Click 'Antioxidants' option");
         driver.findElement(antiOxidants).click();
-
 
     }
 
